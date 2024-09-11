@@ -16,7 +16,7 @@ export default {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/introduction' },
-      { text: 'Playground', link: 'https://cracked.eu.org/' },
+      { text: 'Playground', link: 'https://cracked.eu.org' },
     ],
     // Social Icons
     socialLinks: [
