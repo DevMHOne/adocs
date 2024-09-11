@@ -1,6 +1,6 @@
 export default {
-  title: "Adocs",
-  description: "An awesome docs template built by me",
+  title: "Documentation | FudShop",
+  description: "Deobfuscate, unminify and unpack bundled javascript",
   lang: 'en-US',
   cleanUrls: true,
   // If this is disabled, when building it it will give deadlink errors if your markdown has the wrong links
@@ -8,30 +8,20 @@ export default {
   
   themeConfig: {
     logo: "/logo.svg",
-    siteTitle: "Adocs",
+    siteTitle: "Documentation | FudShop",
     search: {
       provider: "local",
     },
     // Navbar Link
     nav: [
-      { text: "About", link: "/about" },
-      { text: "Contact", link: "/contact" },
-      { text: "Guide", link: "/guide" },
-      { text: "Configs", link: "/configs" },
-      {
-        // Dropdown Menu
-        text: "Changelog",
-        items: [
-          { text: "v0.0.1", link: "/item-1" },
-          { text: "v0.0.2", link: "/item-2" },
-          { text: "v0.0.3", link: "/item-3" },
-        ],
-      },
+      { text: 'Home', link: '/' },
+      { text: 'Guide', link: '/guide/introduction' },
+      { text: 'Playground', link: 'https://webcrack.netlify.app' },
     ],
     // Social Icons
     socialLinks: [
-      { icon: "github", link: "https://github.com/Evavic44/adocs" },
-      { icon: "twitter", link: "https://twitter.com/victorekea" },
+      { icon: "github", link: "https://github.com" },
+      { icon: "twitter", link: "https://twitter.com" },
       { icon: "discord", link: "..." },
       {
         icon: {
@@ -43,27 +33,23 @@ export default {
     // Sidebar
     sidebar: [
       {
-        text: "Section A",
-        collapsible: true,
+        text: 'Guide',
         items: [
-          { text: "Introduction", link: "/introduction" },
-          { text: "Getting Started", link: "/getting-started" },
+          { text: 'Introduction', link: '/guide/introduction' },
+          { text: 'CLI', link: '/guide/cli' },
+          { text: 'Node.js API', link: '/guide/api' },
+          { text: 'Website', link: '/guide/web' },
+          { text: 'Common Errors', link: '/guide/common-errors' },
         ],
       },
       {
-        text: "Section B",
-        collapsible: false,
+        text: 'Concepts',
         items: [
-          { text: "Introduction", link: "/introduction" },
-          { text: "Getting Started", link: "/getting-started" },
-        ],
-      },
-      {
-        text: "Section C",
-        collapsible: true,
-        items: [
-          { text: "Introduction", link: "/introduction" },
-          { text: "Getting Started", link: "/getting-started" },
+          { text: 'Deobfuscate', link: '/concepts/deobfuscate' },
+          { text: 'Unminify', link: '/concepts/unminify' },
+          { text: 'Transpile', link: '/concepts/transpile' },
+          { text: 'Unpack Bundle', link: '/concepts/unpack' },
+          { text: 'JSX', link: '/concepts/jsx' },
         ],
       },
     ],
@@ -73,12 +59,12 @@ export default {
       next: true,
     },
     editLink: {
-      pattern: 'https://github.com/Evavic44/adocs/edit/main/docs/:path',
+      pattern: 'https://github.com/DevMHOne/adocs/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
     },
     footer: {
-      message: "Released under the MIT License.",
-      copyright: "Copyright © 2024-present Adocs",
+      message: "Dirilis di bawah Lisensi MIT.",
+      copyright: "Hak cipta © 2024",
     },
     markdown: {
       theme: "material-palenight",
